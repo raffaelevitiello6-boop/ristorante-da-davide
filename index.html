@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ristorante Da Davide in Bad Nauheim – Authentische italienische Küche mit hausgemachter Pasta, frischer Pizza und argentinischem Rindfleisch in den Kolonnaden.">
+  <title>Ristorante Da Davide | Authentische Italienische Küche in Bad Nauheim</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav__container">
+      <a href="#home" class="nav__logo">
+        <span class="nav__logo-script">Ristorante</span>
+        <span class="nav__logo-main">Da Davide</span>
+      </a>
+      <ul class="nav__links">
+        <li><a href="#about">Über Uns</a></li>
+        <li><a href="#menu">Speisekarte</a></li>
+        <li><a href="#gallery">Galerie</a></li>
+        <li><a href="#contact">Kontakt</a></li>
+        <li><a href="tel:+4960329357770" class="nav__cta">Reservieren</a></li>
+      </ul>
+      <button class="nav__burger" id="burger" aria-label="Menü öffnen">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-menu__close" id="mobileClose" aria-label="Schließen">✕</button>
+    <ul>
+      <li><a href="#about" class="mobile-menu__link">Über Uns</a></li>
+      <li><a href="#menu" class="mobile-menu__link">Speisekarte</a></li>
+      <li><a href="#gallery" class="mobile-menu__link">Galerie</a></li>
+      <li><a href="#contact" class="mobile-menu__link">Kontakt</a></li>
+      <li><a href="tel:+4960329357770" class="mobile-menu__link mobile-menu__link--cta">Reservieren</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero__bg"></div>
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <p class="hero__script">Willkommen im</p>
+      <h1 class="hero__title">
+        <span class="hero__title-ristorante">Ristorante</span>
+        <span class="hero__title-davide">Da Davide</span>
+      </h1>
+      <div class="hero__divider">
+        <span class="hero__divider-line"></span>
+        <span class="hero__divider-icon">✦</span>
+        <span class="hero__divider-line"></span>
+      </div>
+      <p class="hero__tagline">Authentische Italienische Küche in Bad Nauheim</p>
+      <div class="hero__actions">
+        <a href="tel:+4960329357770" class="btn btn--primary">Tisch Reservieren</a>
+        <a href="#menu" class="btn btn--outline">Unsere Speisekarte</a>
+      </div>
+      <div class="hero__info">
+        <div class="hero__info-item">
+          <span class="hero__info-label">Geöffnet</span>
+          <span class="hero__info-value">Di – So</span>
+        </div>
+        <div class="hero__info-sep"></div>
+        <div class="hero__info-item">
+          <span class="hero__info-label">Mittag</span>
+          <span class="hero__info-value">11:30 – 14:30</span>
+        </div>
+        <div class="hero__info-sep"></div>
+        <div class="hero__info-item">
+          <span class="hero__info-label">Abend</span>
+          <span class="hero__info-value">17:30 – 23:00</span>
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="hero__scroll">
+      <span>Entdecken</span>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12l7 7 7-7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="about__grid">
+        <div class="about__image reveal">
+          <div class="about__image-frame">
+            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&q=80" alt="Ristorante Da Davide Atmosphäre" loading="lazy">
+          </div>
+          <div class="about__badge">
+            <span class="about__badge-rating">4.4</span>
+            <span class="about__badge-stars">★★★★★</span>
+            <span class="about__badge-text">772 Google Bewertungen</span>
+          </div>
+        </div>
+        <div class="about__content reveal">
+          <p class="section__label">Über Uns</p>
+          <h2 class="section__title">Benvenuti<br>da Davide</h2>
+          <div class="about__divider"></div>
+          <p class="about__text">Im Herzen von Bad Nauheim, in den wunderschönen Kolonnaden nahe des Kurparks, heißt Sie Davide mit einem herzlichen <em>„Benvenuto"</em> willkommen.</p>
+          <p class="about__text">Seit Jahren steht das Ristorante Da Davide für authentische italienische Küche: hausgemachte Pasta, knusprige Pizzen aus dem Steinofen, zartes argentinisches Rindfleisch und frische Meeresfrüchte – zubereitet mit Leidenschaft und den besten Zutaten.</p>
+          <p class="about__text">Genießen Sie Ihr Essen in unserem gemütlichen Innenraum oder auf unserer schönen Terrasse mit Blick auf den angrenzenden Tennisclub.</p>
+          <div class="about__stats">
+            <div class="about__stat">
+              <span class="about__stat-num">#18</span>
+              <span class="about__stat-label">in Bad Nauheim</span>
+            </div>
+            <div class="about__stat">
+              <span class="about__stat-num">€20–30</span>
+              <span class="about__stat-label">Ø pro Person</span>
+            </div>
+            <div class="about__stat">
+              <span class="about__stat-num">53+</span>
+              <span class="about__stat-label">Gerichte</span>
+            </div>
+          </div>
+          <a href="#menu" class="btn btn--gold">Speisekarte entdecken</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features">
+    <div class="container">
+      <div class="features__grid">
+        <div class="feature reveal">
+          <div class="feature__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="24" cy="24" r="16" stroke="currentColor" stroke-width="1.5"/><path d="M16 24c0-4.418 3.582-8 8-8s8 3.582 8 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M20 30c0-2.21 1.79-4 4-4s4 1.79 4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3 class="feature__title">Hausgemachte Pasta</h3>
+          <p class="feature__text">Täglich frisch zubereitete Nudeln nach original italienischen Rezepten – eine Leidenschaft, die man schmeckt.</p>
+        </div>
+        <div class="feature reveal">
+          <div class="feature__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 38V18l12-8 12 8v20l-12 4-12-4z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M24 10v32M12 18l12 8 12-8" stroke="currentColor" stroke-width="1.5"/></svg>
+          </div>
+          <h3 class="feature__title">Argentinisches Rindfleisch</h3>
+          <p class="feature__text">Erstklassige Steaks vom Rind aus Argentinien – saftig, zart und auf den Punkt gegart.</p>
+        </div>
+        <div class="feature reveal">
+          <div class="feature__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 40h32M14 40V28M34 40V28" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M8 28c0-8.837 7.163-16 16-16s16 7.163 16 16" stroke="currentColor" stroke-width="1.5"/><path d="M24 12V8M18 14l-2-3M30 14l2-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3 class="feature__title">Schöne Terrasse</h3>
+          <p class="feature__text">Genießen Sie Ihr Essen im Freien auf unserer sonnigen Terrasse in den Kolonnaden – La Dolce Vita in Bad Nauheim.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section class="menu-section section" id="menu">
+    <div class="container">
+      <div class="section__header reveal">
+        <p class="section__label">Unsere Küche</p>
+        <h2 class="section__title">La Nostra Cucina</h2>
+        <p class="section__subtitle">Frisch zubereitet, mit Liebe serviert – entdecken Sie unsere vielfältige Speisekarte.</p>
+      </div>
+      <div class="menu__tabs" role="tablist">
+        <button class="menu__tab active" data-tab="suppen">Suppen</button>
+        <button class="menu__tab" data-tab="vorspeisen">Vorspeisen & Salate</button>
+        <button class="menu__tab" data-tab="pizza">Pizza</button>
+        <button class="menu__tab" data-tab="pasta">Pasta</button>
+        <button class="menu__tab" data-tab="fleisch">Fleisch</button>
+        <button class="menu__tab" data-tab="dessert">Dolci</button>
+      </div>
+
+      <!-- SUPPEN -->
+      <div class="menu__panel active" data-panel="suppen">
+        <div class="menu__grid">
+          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Minestrone</h4><p class="menu__item-desc">Gemüsesuppe</p></div><span class="menu__item-price">6,50 €</span></div>
+          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Tortellini in Brodo</h4><p class="menu__item-desc">Fleischbrühe mit gefüllten Nudeln</p></div><span class="menu__item-price">5,50 €</span></div>
+          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Zuppa di Pomodoro</h4><p class="menu__item-desc">Tomatensuppe</p></div><span class="menu__item-price">5,50 €</span></div>
+          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Stracciatella</h4><p class="menu__item-desc">Fleischbrühe mit Ei</p></div><span class="menu__item-price">5,50 €</span></div>
+        </div>
+      </div>
+
+      <!-- VORSPEISEN -->
+      <div class="menu__panel" data-panel="vorspeisen">
+        <div class="menu__grid">
+          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Vitello Tonnato</h4><p class="menu__item-desc">Kalbfleisch in Thunfischcreme</p></div><span class="menu__item-price">13,00 €</span></div>
+          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Mozzarella Caprese</h4><p class="menu__item-desc">Mit Tomaten und Basilikum</p></div><span class="menu__item-price">10,50 €</span></div>
+          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Filetto Carpaccio</h4><p class="menu__item-desc">Rohes Rinderfilet in dünne Scheiben geschnitten und garniert</p></div><span class="menu__item-price">13,00 €</span></div>
+          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Feldsalat</h4><p class="menu__item-desc">Mit Parmesan und Pinienkernen</p></div><span class="menu__item-price">9,50 €</span></div>
+          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Insalata di Pomodoro</h4><p class="menu__item-desc">Tomatensalat mit Zwiebeln und Basilikum</p></div><span class="menu__item-price">6,00 €</span></div>
+          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Insalata Mista</h4><p class="menu__item-desc">Gemischter grüner Salat</p></div><span class="menu__item-price">6,50 €</span></div>
+          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Insalata Mista con Pollo</h4><p class="menu__item-desc">Mit Hähnchenbruststreifen</p></div><span class="menu__item-price">14,50 €</span></div>
+          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Insalata Italia</h4><p class="menu__item-desc">Italienischer Salat</p></div><span class="menu__item-price">9,50 €</span></div>
+          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Insalata Capricciosa</h4><p class="menu__item-desc">Gemischter Salat mit Schinken, Käse, Ei, Shrimps, Thunfisch und Krebsfleisch</p></div><span class="menu__item-price">16,50 €</span></div>
+          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Insalata Pacifico</h4><p class="menu__item-desc">Gemischter Salat mit Shrimps und Krebsfleisch</p></div><span class="menu__item-price">12,50 €</span></div>
+          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Rukolasalat mit Parmesan</h4><p class="menu__item-desc">Rucola mit frisch gehobeltem Parmesan</p></div><span class="menu__item-price">8,50 €</span></div>
+        </div>
+      </div>
+
+      <!-- PIZZA -->
+      <div class="menu__panel" data-panel="pizza">
+        <div class="menu__grid">
+          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Pizza Margherita</h4><p class="menu__item-desc">Mit Tomaten und Käse</p></div><span class="menu__item-price">5,50 €</span></div>
+          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Pizza mit Sardellen</h4><p class="menu__item-desc">Klassisch mit Anchovis</p></div><span class="menu__item-price">8,00 €</span></div>
+          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Pizza mit Salami</h4><p class="menu__item-desc">Mit italienischer Salami</p></div><span class="menu__item-price">8,00 €</span></div>
+          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Pizza mit Pilzen</h4><p class="menu__item-desc">Mit frischen Champignons</p></div><span class="menu__item-price">8,00 €</span></div>
+          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Pizza mit Peperoni</h4><p class="menu__item-desc">Pikante Peperoniwurst</p></div><span class="menu__item-price">8,50 €</span></div>
+          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Pizza mit Pilzen und Paprika</h4><p class="menu__item-desc">Champignons und bunter Paprika</p></div><span class="menu__item-price">8,50 €</span></div>
+          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Pizza mit Schinken</h4><p class="menu__item-desc">Mit Kochschinken</p></div><span class="menu__item-price">8,00 €</span></div>
+          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Pizza mit Salami und Pilzen</h4><p class="menu__item-desc">Klassische Kombination</p></div><span class="menu__item-price">9,00 €</span></div>
+          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Pizza mit Schinken und Pilzen</h4><p class="menu__item-desc">Beliebte Kombination</p></div><span class="menu__item-price">9,00 €</span></div>
+          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Pizza Quattro Stagioni</h4><p class="menu__item-desc">Mit Salami, Schinken, Paprika und Pilzen</p></div><span class="menu__item-price">9,50 €</span></div>
+          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Pizza Gamberetti</h4><p class="menu__item-desc">Mit frischen Shrimps</p></div><span class="menu__item-price">10,50 €</span></div>
+          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Pizza Taormina</h4><p class="menu__item-desc">Mit Pilzen, Schinken, Salami und Artischocken</p></div><span class="menu__item-price">9,50 €</span></div>
+          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Pizza mit Zucchini</h4><p class="menu__item-desc">Mit frischer Zucchini und Mozzarella</p></div><span class="menu__item-price">9,50 €</span></div>
+          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Pizza Rucola</h4><p class="menu__item-desc">Mit Parmesan und Parmaschinken</p></div><span class="menu__item-price">11,50 €</span></div>
+          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Pizza Broccoli und Gorgonzola</h4><p class="menu__item-desc">Cremige Kombination</p></div><span class="menu__item-price">9,50 €</span></div>
+          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Pizza Pescatore</h4><p class="menu__item-desc">Mit Meeresfrüchten</p></div><span class="menu__item-price">10,50 €</span></div>
+          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Pizza Vegetariana</h4><p class="menu__item-desc">Mit gemischtem Gemüse</p></div><span class="menu__item-price">9,50 €</span></div>
+          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Pizza Italiana</h4><p class="menu__item-desc">Mit frischen Tomaten, Mozzarella und Basilikum</p></div><span class="menu__item-price">9,50 €</span></div>
+          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Pizza Speciale</h4><p class="menu__item-desc">Mit Artischocken, Salami, Schinken, Paprika, Pilzen und Ei</p></div><span class="menu__item-price">9,50 €</span></div>
+          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Pizza Popeye</h4><p class="menu__item-desc">Mit Salami, Schinken, Spinat, Knoblauch und Mozzarella</p></div><span class="menu__item-price">10,50 €</span></div>
+          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Pizza Calzone</h4><p class="menu__item-desc">Gefüllt mit Spinat, Schinken, Knoblauch und Sardellen</p></div><span class="menu__item-price">9,50 €</span></div>
+          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Pizza Hawaii</h4><p class="menu__item-desc">Mit Schinken und Ananas</p></div><span class="menu__item-price">9,00 €</span></div>
+          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Pizza Tonno</h4><p class="menu__item-desc">Mit Thunfisch</p></div><span class="menu__item-price">8,50 €</span></div>
+          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Pizza Melanzana</h4><p class="menu__item-desc">Mit Auberginen, Gorgonzola und Mozzarella</p></div><span class="menu__item-price">10,50 €</span></div>
+        </div>
+      </div>
+
+      <!-- PASTA -->
+      <div class="menu__panel" data-panel="pasta">
+        <div class="menu__grid">
+          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Spaghetti Napoli</h4><p class="menu__item-desc">Spaghetti mit Tomatensauce</p></div><span class="menu__item-price">7,00 €</span></div>
+          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Spaghetti Bolognese</h4><p class="menu__item-desc">Mit Hackfleischsauce vom Rind</p></div><span class="menu__item-price">9,50 €</span></div>
+          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Spaghetti ai Frutti di Mare</h4><p class="menu__item-desc">Spaghetti mit Meeresfrüchten</p></div><span class="menu__item-price">14,00 €</span></div>
+          <div class="menu__item menu__item--special"><div class="menu__item-info"><h4 class="menu__item-name">Paccheri Mafioso</h4><p class="menu__item-desc">Hausgemachte Nudeln mit Filetspitzen (pikant)</p></div><span class="menu__item-price">15,50 €</span></div>
+          <div class="menu__item menu__item--special"><div class="menu__item-info"><h4 class="menu__item-name">Tagliatelle al Salmone</h4><p class="menu__item-desc">Bandnudeln mit frischem Lachs</p></div><span class="menu__item-price">14,00 €</span></div>
+          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Tagliatelle Boscaiola</h4><p class="menu__item-desc">Bandnudeln mit frischen Pilzen und Sahnesauce</p></div><span class="menu__item-price">10,50 €</span></div>
+          <div class="menu__item menu__item--special"><div class="menu__item-info"><h4 class="menu__item-name">Fettuccine alla Carletto</h4><p class="menu__item-desc">Mit Scampi in Tomatensauce (leicht pikant)</p></div><span class="menu__item-price">16,50 €</span></div>
+          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Pennette Arrabbiata</h4><p class="menu__item-desc">Mit Knoblauch, Olivenöl, Peperoni und frischen Tomaten (scharf)</p></div><span class="menu__item-price">9,50 €</span></div>
+          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Tortellini alla Panna</h4><p class="menu__item-desc">Mit Rahmsauce und Schinken</p></div><span class="menu__item-price">10,50 €</span></div>
+          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Lasagne</h4><p class="menu__item-desc">Gebackene Nudeln mit Fleischsauce</p></div><span class="menu__item-price">8,50 €</span></div>
+        </div>
+      </div>
+
+      <!-- FLEISCH -->
+      <div class="menu__panel" data-panel="fleisch">
+        <p class="menu__section-label">Vom Rind aus Argentinien</p>
+        <div class="menu__grid">
+          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Tagliata di Manzo</h4><p class="menu__item-desc">Rumpsteak geschnitten mit Rucola und Parmesan</p></div><span class="menu__item-price">24,50 €</span></div>
+          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Bistecca Natura</h4><p class="menu__item-desc">Rumpsteak Natur gegrillt</p></div><span class="menu__item-price">22,50 €</span></div>
+          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Bistecca alla Cipolle</h4><p class="menu__item-desc">Rumpsteak mit Zwiebeln</p></div><span class="menu__item-price">24,50 €</span></div>
+          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Bistecca alla Pizzaiola</h4><p class="menu__item-desc">Rumpsteak mit Tomatensauce, Oliven, Kapern und Knoblauch</p></div><span class="menu__item-price">24,50 €</span></div>
+          <div class="menu__item menu__item--special"><div class="menu__item-info"><h4 class="menu__item-name">Filetto Natura</h4><p class="menu__item-desc">Filetsteak Natur gegrillt</p></div><span class="menu__item-price">25,50 €</span></div>
+          <div class="menu__item menu__item--special"><div class="menu__item-info"><h4 class="menu__item-name">Filetto alla Gorgonzola</h4><p class="menu__item-desc">Filetsteak mit Gorgonzola-Sahne-Sauce</p></div><span class="menu__item-price">29,50 €</span></div>
+          <div class="menu__item menu__item--special"><div class="menu__item-info"><h4 class="menu__item-name">Filetto al Pepeverde</h4><p class="menu__item-desc">Filetsteak mit grüner Pfeffersauce</p></div><span class="menu__item-price">29,50 €</span></div>
+        </div>
+        <p class="menu__section-label" style="margin-top:2.5rem">Vom Kalb</p>
+        <div class="menu__grid">
+          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Scaloppina al Limone</h4><p class="menu__item-desc">Fleischmedaillons in Zitronensauce</p></div><span class="menu__item-price">19,50 €</span></div>
+          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Paillard di Vitella alla Griglia</h4><p class="menu__item-desc">Dünnes Kalbsteak gegrillt</p></div><span class="menu__item-price">20,50 €</span></div>
+          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Saltimbocca alla Romana</h4><p class="menu__item-desc">Fleischmedaillons mit Salbei und Schinken in Weißweinsauce</p></div><span class="menu__item-price">22,50 €</span></div>
+          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Piccata alla Pizzaiola</h4><p class="menu__item-desc">Kalbsmedaillons mit Tomatensauce, Oliven, Kapern und Knoblauch</p></div><span class="menu__item-price">22,50 €</span></div>
+        </div>
+      </div>
+
+      <!-- DESSERT -->
+      <div class="menu__panel" data-panel="dessert">
+        <div class="menu__grid">
+          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Gelato Vaniglia con Cioccolata</h4><p class="menu__item-desc">Vanilleeis mit Schokoladen- oder Himbeersauce</p></div><span class="menu__item-price">5,50 €</span></div>
+          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Zabaglione</h4><p class="menu__item-desc">Weinschaum</p></div><span class="menu__item-price">6,50 €</span></div>
+          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Crème Caramel</h4><p class="menu__item-desc">Klassischer Karamellpudding</p></div><span class="menu__item-price">6,50 €</span></div>
+          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Mousse au Chocolat</h4><p class="menu__item-desc">Dunkle Schokoladenmousse</p></div><span class="menu__item-price">6,50 €</span></div>
+          <div class="menu__item menu__item--special"><div class="menu__item-info"><h4 class="menu__item-name">Tiramisù</h4><p class="menu__item-desc">Hausgemachtes Tiramisù nach originalem Rezept</p></div><span class="menu__item-price">6,50 €</span></div>
+          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Tartufo</h4><p class="menu__item-desc">Italienische Eisspezialität</p></div><span class="menu__item-price">6,50 €</span></div>
+          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Cassata</h4><p class="menu__item-desc">Sizilianische Spezialität</p></div><span class="menu__item-price">6,50 €</span></div>
+          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Panna Cotta</h4><p class="menu__item-desc">Klassisch mit Fruchtsoße</p></div><span class="menu__item-price">6,00 €</span></div>
+          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Zitronensorbet</h4><p class="menu__item-desc">Erfrischendes Zitronensorbet</p></div><span class="menu__item-price">6,50 €</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUOTE BANNER -->
+  <section class="quote-banner">
+    <div class="container">
+      <blockquote class="quote-banner__text">"Wunderschöner Ort zum draußen sitzen und genießen – die Pasta schmeckt wie in Italien."</blockquote>
+      <cite class="quote-banner__cite">— Gast auf Google &nbsp;★★★★★</cite>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery section" id="gallery">
+    <div class="container">
+      <div class="section__header reveal">
+        <p class="section__label">Eindrücke</p>
+        <h2 class="section__title">La Nostra Atmosfera</h2>
+      </div>
+      <div class="gallery__grid">
+        <div class="gallery__item gallery__item--large reveal">
+          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&q=80" alt="Restaurant Atmosphäre" loading="lazy">
+        </div>
+        <div class="gallery__item reveal"><img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=600&q=80" alt="Pasta" loading="lazy"></div>
+        <div class="gallery__item reveal"><img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=600&q=80" alt="Pizza" loading="lazy"></div>
+        <div class="gallery__item reveal"><img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=80" alt="Italienisches Essen" loading="lazy"></div>
+        <div class="gallery__item reveal"><img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=600&q=80" alt="Steak" loading="lazy"></div>
+        <div class="gallery__item reveal"><img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=600&q=80" alt="Dessert" loading="lazy"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="reviews section">
+    <div class="container">
+      <div class="section__header reveal">
+        <p class="section__label">Was Gäste sagen</p>
+        <h2 class="section__title">Bewertungen</h2>
+        <div class="reviews__rating">
+          <span class="reviews__stars">★★★★★</span>
+          <span class="reviews__score">4.4 / 5</span>
+          <span class="reviews__count">772 Google-Bewertungen</span>
+        </div>
+      </div>
+      <div class="reviews__grid">
+        <div class="review reveal">
+          <div class="review__stars">★★★★★</div>
+          <p class="review__text">"Der Besitzer Davide ist unglaublich freundlich und gastfreundlich. Er kocht jeden italienischen Wunsch, den man sich vorstellen kann."</p>
+          <span class="review__author">— Marco R.</span>
+        </div>
+        <div class="review reveal">
+          <div class="review__stars">★★★★★</div>
+          <p class="review__text">"Wunderschöner Ort zum draußen sitzen und genießen. Die Terrasse mit Blick auf den Tennisclub ist einfach traumhaft schön."</p>
+          <span class="review__author">— Sandra K.</span>
+        </div>
+        <div class="review reveal">
+          <div class="review__stars">★★★★★</div>
+          <p class="review__text">"Das beste italienische Restaurant in Bad Nauheim – die Pizza Margherita ist ein echter Qualitätsmaßstab. Immer wieder gerne!"</p>
+          <span class="review__author">— Thomas M.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section__header reveal">
+        <p class="section__label">Besuchen Sie uns</p>
+        <h2 class="section__title">Kontakt & Öffnungszeiten</h2>
+      </div>
+      <div class="contact__grid">
+        <div class="contact__info reveal">
+          <div class="contact__block">
+            <h3 class="contact__block-title">Öffnungszeiten</h3>
+            <div class="contact__hours">
+              <div class="contact__hours-row contact__hours-closed">
+                <span>Montag</span><span>Ruhetag</span>
+              </div>
+              <div class="contact__hours-row">
+                <span>Dienstag – Sonntag</span><span>11:30 – 14:30 Uhr</span>
+              </div>
+              <div class="contact__hours-row">
+                <span></span><span>17:30 – 23:00 Uhr</span>
+              </div>
+            </div>
+          </div>
+          <div class="contact__block">
+            <h3 class="contact__block-title">Kontakt</h3>
+            <div class="contact__details">
+              <a href="tel:+4960329357770" class="contact__link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.08 9.8a19.79 19.79 0 01-3.07-8.68A2 2 0 012 .84h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.64a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                +49 (0) 6032 935 777
+              </a>
+              <a href="mailto:info@ristorante-da-davide.de" class="contact__link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                info@ristorante-da-davide.de
+              </a>
+              <div class="contact__address">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <div><p>In den Kolonnaden 17</p><p>61231 Bad Nauheim</p></div>
+              </div>
+            </div>
+          </div>
+          <a href="tel:+4960329357770" class="btn btn--gold btn--full">Jetzt Reservieren</a>
+        </div>
+        <div class="contact__map reveal">
+          <iframe
+            src="https://maps.google.com/maps?q=In+den+Kolonnaden+17,+61231+Bad+Nauheim,+Germany&t=&z=16&ie=UTF8&iwloc=&output=embed"
+            width="100%" height="420" style="border:0;" allowfullscreen="" loading="lazy"
+            title="Ristorante Da Davide Standort"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <p class="footer__logo-script">Ristorante</p>
+          <p class="footer__logo-main">Da Davide</p>
+          <p class="footer__tagline">Authentische Italienische Küche<br>in Bad Nauheim</p>
+        </div>
+        <div class="footer__nav">
+          <h4 class="footer__nav-title">Navigation</h4>
+          <ul>
+            <li><a href="#about">Über Uns</a></li>
+            <li><a href="#menu">Speisekarte</a></li>
+            <li><a href="#gallery">Galerie</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+          </ul>
+        </div>
+        <div class="footer__contact-col">
+          <h4 class="footer__nav-title">Kontakt</h4>
+          <p>In den Kolonnaden 17<br>61231 Bad Nauheim</p>
+          <p><a href="tel:+4960329357770">+49 (0) 6032 935 777</a></p>
+          <p><a href="mailto:info@ristorante-da-davide.de">info@ristorante-da-davide.de</a></p>
+        </div>
+        <div class="footer__hours-col">
+          <h4 class="footer__nav-title">Öffnungszeiten</h4>
+          <p>Di – So: 11:30 – 14:30 Uhr</p>
+          <p>Di – So: 17:30 – 23:00 Uhr</p>
+          <p class="footer__closed">Mo: Ruhetag</p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">© 2025 Ristorante Da Davide. Alle Rechte vorbehalten.</p>
+        <div class="footer__legal">
+          <a href="#">Impressum</a>
+          <a href="#">Datenschutz</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
