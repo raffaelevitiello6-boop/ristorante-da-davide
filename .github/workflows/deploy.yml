@@ -1,0 +1,31 @@
+name: Deploy to IONOS
+
+on:
+  push:
+    branches:
+      - main          # auto-deploy only from main branch
+  workflow_dispatch:  # also allow manual trigger from GitHub UI
+
+jobs:
+  deploy:
+    name: FTP Deploy to IONOS
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Deploy via FTP to IONOS
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          # IONOS webspace root – adjust if your domain lives in a subfolder
+          server-dir: /
+          # Only upload these file types (exclude git/workflow files)
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
+            .github/**
