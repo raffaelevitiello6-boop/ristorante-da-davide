@@ -891,6 +891,8 @@ ul { list-style: none; }
 .contact__hours-row:last-child { border-bottom: none; }
 .contact__hours-closed { color: var(--text-light); }
 .contact__hours-closed span:last-child { color: var(--wine); font-weight: 500; }
+.contact__hours-note { font-size: 0.75rem; color: var(--text-light); margin-top: 0.6rem; font-style: italic; }
+.footer__hours-note { font-size: 0.72rem; color: rgba(255,255,255,0.35); font-style: italic; margin-top: 0.2rem; }
 
 .contact__details { display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 2rem; }
 
