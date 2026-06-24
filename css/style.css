@@ -442,6 +442,17 @@ ul { list-style: none; }
 }
 .hero__info-sep { width: 1px; height: 38px; background: rgba(255,255,255,0.18); }
 
+.hero__holiday-note {
+  text-align: center;
+  font-size: 0.82rem;
+  color: rgba(255,255,255,0.55);
+  font-style: italic;
+  margin-top: 0.6rem;
+  letter-spacing: 0.03em;
+  opacity: 0;
+  animation: fadeIn 0.8s 1.4s forwards;
+}
+
 .hero__scroll {
   position: absolute;
   bottom: 2.5rem;
