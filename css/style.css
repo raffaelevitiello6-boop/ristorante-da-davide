@@ -966,6 +966,20 @@ ul { list-style: none; }
   font-weight: 300;
 }
 
+.footer__social { margin-top: 1.2rem; }
+.footer__social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: rgba(255,255,255,0.45);
+  font-size: 0.82rem;
+  font-weight: 400;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.footer__social-link:hover { color: var(--gold); }
+.footer__social-link svg { flex-shrink: 0; }
+
 .footer__nav-title {
   font-size: 0.63rem;
   font-weight: 700;
