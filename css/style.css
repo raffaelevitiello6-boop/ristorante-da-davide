@@ -226,6 +226,24 @@ ul { list-style: none; }
   color: var(--dark) !important;
 }
 
+.nav__lang {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.35);
+  color: var(--white);
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  padding: 0.3rem 0.65rem;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s;
+  margin-left: 0.75rem;
+}
+.nav__lang:hover { border-color: var(--gold); color: var(--gold); }
+.nav.scrolled .nav__lang { color: var(--text); border-color: rgba(0,0,0,0.25); }
+.nav.scrolled .nav__lang:hover { border-color: var(--gold); color: var(--gold); }
+
 .nav__burger {
   display: none;
   flex-direction: column;

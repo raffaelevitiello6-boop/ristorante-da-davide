@@ -20,12 +20,13 @@
         <span class="nav__logo-main">Da Davide</span>
       </a>
       <ul class="nav__links">
-        <li><a href="#about">Über Uns</a></li>
-        <li><a href="#menu">Speisekarte</a></li>
-        <li><a href="#gallery">Galerie</a></li>
-        <li><a href="#contact">Kontakt</a></li>
-        <li><a href="tel:+496032935777" class="nav__cta">Reservieren</a></li>
+        <li><a href="#about" data-i18n="nav.about">Über Uns</a></li>
+        <li><a href="#menu" data-i18n="nav.menu">Speisekarte</a></li>
+        <li><a href="#gallery" data-i18n="nav.gallery">Galerie</a></li>
+        <li><a href="#contact" data-i18n="nav.contact">Kontakt</a></li>
+        <li><a href="tel:+496032935777" class="nav__cta" data-i18n="nav.reserve">Reservieren</a></li>
       </ul>
+      <button class="nav__lang" id="langToggle" aria-label="Sprache wechseln">EN</button>
       <button class="nav__burger" id="burger" aria-label="Menü öffnen">
         <span></span><span></span><span></span>
       </button>
@@ -36,11 +37,11 @@
   <div class="mobile-menu" id="mobileMenu">
     <button class="mobile-menu__close" id="mobileClose" aria-label="Schließen">✕</button>
     <ul>
-      <li><a href="#about" class="mobile-menu__link">Über Uns</a></li>
-      <li><a href="#menu" class="mobile-menu__link">Speisekarte</a></li>
-      <li><a href="#gallery" class="mobile-menu__link">Galerie</a></li>
-      <li><a href="#contact" class="mobile-menu__link">Kontakt</a></li>
-      <li><a href="tel:+496032935777" class="mobile-menu__link mobile-menu__link--cta">Reservieren</a></li>
+      <li><a href="#about" class="mobile-menu__link" data-i18n="nav.about">Über Uns</a></li>
+      <li><a href="#menu" class="mobile-menu__link" data-i18n="nav.menu">Speisekarte</a></li>
+      <li><a href="#gallery" class="mobile-menu__link" data-i18n="nav.gallery">Galerie</a></li>
+      <li><a href="#contact" class="mobile-menu__link" data-i18n="nav.contact">Kontakt</a></li>
+      <li><a href="tel:+496032935777" class="mobile-menu__link mobile-menu__link--cta" data-i18n="nav.reserve">Reservieren</a></li>
     </ul>
   </div>
 
@@ -49,7 +50,7 @@
     <div class="hero__bg"></div>
     <div class="hero__overlay"></div>
     <div class="hero__content">
-      <p class="hero__script">Willkommen im</p>
+      <p class="hero__script" data-i18n="hero.welcome">Willkommen im</p>
       <h1 class="hero__title">
         <span class="hero__title-ristorante">Ristorante</span>
         <span class="hero__title-davide">Da Davide</span>
@@ -59,31 +60,31 @@
         <span class="hero__divider-icon">✦</span>
         <span class="hero__divider-line"></span>
       </div>
-      <p class="hero__tagline">Authentische Italienische Küche in Bad Nauheim</p>
+      <p class="hero__tagline" data-i18n="hero.tagline">Authentische Italienische Küche in Bad Nauheim</p>
       <div class="hero__actions">
-        <a href="tel:+496032935777" class="btn btn--primary">Tisch Reservieren</a>
-        <a href="#menu" class="btn btn--outline">Unsere Speisekarte</a>
+        <a href="tel:+496032935777" class="btn btn--primary" data-i18n="hero.reserve">Tisch Reservieren</a>
+        <a href="#menu" class="btn btn--outline" data-i18n="hero.ourmenu">Unsere Speisekarte</a>
       </div>
       <div class="hero__info">
         <div class="hero__info-item">
-          <span class="hero__info-label">Geöffnet</span>
+          <span class="hero__info-label" data-i18n="hero.open">Geöffnet</span>
           <span class="hero__info-value">Di – So</span>
         </div>
         <div class="hero__info-sep"></div>
         <div class="hero__info-item">
-          <span class="hero__info-label">Mittag</span>
+          <span class="hero__info-label" data-i18n="hero.lunch">Mittag</span>
           <span class="hero__info-value">11:30 – 14:30</span>
         </div>
         <div class="hero__info-sep"></div>
         <div class="hero__info-item">
-          <span class="hero__info-label">Abend</span>
+          <span class="hero__info-label" data-i18n="hero.dinner">Abend</span>
           <span class="hero__info-value">17:30 – 23:00</span>
         </div>
       </div>
-      <p class="hero__holiday-note">Feiertags montags geöffnet</p>
+      <p class="hero__holiday-note" data-i18n="hero.holiday">Feiertags montags geöffnet</p>
     </div>
     <a href="#about" class="hero__scroll">
-      <span>Entdecken</span>
+      <span data-i18n="hero.discover">Entdecken</span>
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12l7 7 7-7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
     </a>
   </section>
@@ -103,29 +104,29 @@
           </div>
         </div>
         <div class="about__content reveal">
-          <p class="section__label">Über Uns</p>
+          <p class="section__label" data-i18n="about.label">Über Uns</p>
           <h2 class="section__title">Benvenuti<br>da Davide</h2>
           <div class="about__divider"></div>
-          <p class="about__text">Im Herzen von Bad Nauheim, in den wunderschönen Kolonnaden nahe des Kurparks, heißt Sie Davide mit einem herzlichen <em>„Benvenuto"</em> willkommen.</p>
-          <p class="about__text">Seit 2001 steht das Ristorante Da Davide für authentische italienische Küche: hausgemachte Pasta, knusprige Pizzen, zartes argentinisches Rindfleisch und frische Meeresfrüchte – zubereitet mit Leidenschaft und den besten Zutaten.</p>
-          <p class="about__text">Genießen Sie Ihr Essen in unserem gemütlichen Innenraum oder auf unserer schönen Terrasse mit Blick auf den angrenzenden Tennisclub.</p>
+          <p class="about__text" data-i18n-html="about.text1">Im Herzen von Bad Nauheim, in den wunderschönen Kolonnaden nahe des Kurparks, heißt Sie Davide mit einem herzlichen <em>„Benvenuto"</em> willkommen.</p>
+          <p class="about__text" data-i18n="about.text2">Seit 2001 steht das Ristorante Da Davide für authentische italienische Küche: hausgemachte Pasta, knusprige Pizzen, zartes argentinisches Rindfleisch und frische Meeresfrüchte – zubereitet mit Leidenschaft und den besten Zutaten.</p>
+          <p class="about__text" data-i18n="about.text3">Genießen Sie Ihr Essen in unserem gemütlichen Innenraum oder auf unserer schönen Terrasse mit Blick auf den angrenzenden Tennisclub.</p>
           <div class="about__awards">
             <div class="about__award">
               <span class="about__award-icon">🏅</span>
               <div>
                 <strong>IHK Ausbildungsbetrieb</strong>
-                <span>Anerkannt von der IHK Gießen-Friedberg</span>
+                <span data-i18n="about.ihk">Anerkannt von der IHK Gießen-Friedberg</span>
               </div>
             </div>
             <div class="about__award">
               <span class="about__award-icon">🇮🇹</span>
               <div>
                 <strong>Botschafter Italienischer Küche</strong>
-                <span>DOC-zertifiziert – zum-echten-italiener.de</span>
+                <span data-i18n="about.doc">DOC-zertifiziert – zum-echten-italiener.de</span>
               </div>
             </div>
           </div>
-          <a href="#menu" class="btn btn--gold">Speisekarte entdecken</a>
+          <a href="#menu" class="btn btn--gold" data-i18n="about.cta">Speisekarte entdecken</a>
         </div>
       </div>
     </div>
@@ -139,22 +140,22 @@
           <div class="feature__icon">
             <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="24" cy="24" r="16" stroke="currentColor" stroke-width="1.5"/><path d="M16 24c0-4.418 3.582-8 8-8s8 3.582 8 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M20 30c0-2.21 1.79-4 4-4s4 1.79 4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
           </div>
-          <h3 class="feature__title">Hausgemachte Pasta</h3>
-          <p class="feature__text">Täglich frisch zubereitete Nudeln nach original italienischen Rezepten – eine Leidenschaft, die man schmeckt.</p>
+          <h3 class="feature__title" data-i18n="feat1.title">Hausgemachte Pasta</h3>
+          <p class="feature__text" data-i18n="feat1.text">Täglich frisch zubereitete Nudeln nach original italienischen Rezepten – eine Leidenschaft, die man schmeckt.</p>
         </div>
         <div class="feature reveal">
           <div class="feature__icon">
             <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 38V18l12-8 12 8v20l-12 4-12-4z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M24 10v32M12 18l12 8 12-8" stroke="currentColor" stroke-width="1.5"/></svg>
           </div>
-          <h3 class="feature__title">Argentinisches Rindfleisch</h3>
-          <p class="feature__text">Erstklassige Steaks vom Rind aus Argentinien – saftig, zart und auf den Punkt gegart.</p>
+          <h3 class="feature__title" data-i18n="feat2.title">Argentinisches Rindfleisch</h3>
+          <p class="feature__text" data-i18n="feat2.text">Erstklassige Steaks vom Rind aus Argentinien – saftig, zart und auf den Punkt gegart.</p>
         </div>
         <div class="feature reveal">
           <div class="feature__icon">
             <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 40h32M14 40V28M34 40V28" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M8 28c0-8.837 7.163-16 16-16s16 7.163 16 16" stroke="currentColor" stroke-width="1.5"/><path d="M24 12V8M18 14l-2-3M30 14l2-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
           </div>
-          <h3 class="feature__title">Schöne Terrasse</h3>
-          <p class="feature__text">Genießen Sie Ihr Essen im Freien auf unserer sonnigen Terrasse in den Kolonnaden – La Dolce Vita in Bad Nauheim.</p>
+          <h3 class="feature__title" data-i18n="feat3.title">Schöne Terrasse</h3>
+          <p class="feature__text" data-i18n="feat3.text">Genießen Sie Ihr Essen im Freien auf unserer sonnigen Terrasse in den Kolonnaden – La Dolce Vita in Bad Nauheim.</p>
         </div>
       </div>
     </div>
@@ -164,17 +165,17 @@
   <section class="menu-section section" id="menu">
     <div class="container">
       <div class="section__header reveal">
-        <p class="section__label">Unsere Küche</p>
+        <p class="section__label" data-i18n="menu.label">Unsere Küche</p>
         <h2 class="section__title">La Nostra Cucina</h2>
-        <p class="section__subtitle">Frisch zubereitet, mit Liebe serviert – entdecken Sie unsere vielfältige Speisekarte.</p>
+        <p class="section__subtitle" data-i18n="menu.subtitle">Frisch zubereitet, mit Liebe serviert – entdecken Sie unsere vielfältige Speisekarte.</p>
       </div>
       <div class="menu__tabs" role="tablist">
-        <button class="menu__tab active" data-tab="suppen">Suppen</button>
-        <button class="menu__tab" data-tab="vorspeisen">Vorspeisen & Salate</button>
+        <button class="menu__tab active" data-tab="suppen" data-i18n="tab.suppen">Suppen</button>
+        <button class="menu__tab" data-tab="vorspeisen" data-i18n="tab.vorspeisen">Vorspeisen & Salate</button>
         <button class="menu__tab" data-tab="pizza">Pizza</button>
         <button class="menu__tab" data-tab="pasta">Pasta</button>
-        <button class="menu__tab" data-tab="fleisch">Fleisch</button>
-        <button class="menu__tab" data-tab="dessert">Dolci</button>
+        <button class="menu__tab" data-tab="fleisch" data-i18n="tab.fleisch">Fleisch</button>
+        <button class="menu__tab" data-tab="dessert" data-i18n="tab.dessert">Dolci</button>
       </div>
 
       <!-- SUPPEN -->
@@ -300,7 +301,7 @@
   <section class="gallery section" id="gallery">
     <div class="container">
       <div class="section__header reveal">
-        <p class="section__label">Eindrücke</p>
+        <p class="section__label" data-i18n="gallery.label">Eindrücke</p>
         <h2 class="section__title">La Nostra Atmosfera</h2>
       </div>
       <div class="gallery__grid">
@@ -321,12 +322,12 @@
   <section class="reviews section">
     <div class="container">
       <div class="section__header reveal">
-        <p class="section__label">Was Gäste sagen</p>
-        <h2 class="section__title">Bewertungen</h2>
+        <p class="section__label" data-i18n="reviews.label">Was Gäste sagen</p>
+        <h2 class="section__title" data-i18n="reviews.title">Bewertungen</h2>
         <div class="reviews__rating">
           <span class="reviews__stars">★★★★★</span>
           <span class="reviews__score">4.4 / 5</span>
-          <span class="reviews__count">772 Google-Bewertungen</span>
+          <span class="reviews__count" data-i18n="reviews.count">772 Google-Bewertungen</span>
         </div>
       </div>
       <div class="reviews__grid">
@@ -353,28 +354,28 @@
   <section class="contact section" id="contact">
     <div class="container">
       <div class="section__header reveal">
-        <p class="section__label">Besuchen Sie uns</p>
-        <h2 class="section__title">Kontakt & Öffnungszeiten</h2>
+        <p class="section__label" data-i18n="contact.label">Besuchen Sie uns</p>
+        <h2 class="section__title" data-i18n="contact.title">Kontakt & Öffnungszeiten</h2>
       </div>
       <div class="contact__grid">
         <div class="contact__info reveal">
           <div class="contact__block">
-            <h3 class="contact__block-title">Öffnungszeiten</h3>
+            <h3 class="contact__block-title" data-i18n="hours.title">Öffnungszeiten</h3>
             <div class="contact__hours">
               <div class="contact__hours-row contact__hours-closed">
-                <span>Montag</span><span>Ruhetag</span>
+                <span data-i18n="hours.mon">Montag</span><span data-i18n="hours.closed">Ruhetag</span>
               </div>
               <div class="contact__hours-row">
-                <span>Dienstag – Sonntag</span><span>11:30 – 14:30 Uhr</span>
+                <span data-i18n="hours.tue-sun">Dienstag – Sonntag</span><span>11:30 – 14:30 Uhr</span>
               </div>
               <div class="contact__hours-row">
                 <span></span><span>17:30 – 23:00 Uhr</span>
               </div>
-              <p class="contact__hours-note">Bei Feiertagen an Montagen geöffnet.</p>
+              <p class="contact__hours-note" data-i18n="hours.note">Bei Feiertagen an Montagen geöffnet.</p>
             </div>
           </div>
           <div class="contact__block">
-            <h3 class="contact__block-title">Kontakt</h3>
+            <h3 class="contact__block-title" data-i18n="contact.block">Kontakt</h3>
             <div class="contact__details">
               <a href="tel:+496032935777" class="contact__link">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.08 9.8a19.79 19.79 0 01-3.07-8.68A2 2 0 012 .84h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.64a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
@@ -390,7 +391,7 @@
               </div>
             </div>
           </div>
-          <a href="tel:+496032935777" class="btn btn--gold btn--full">Jetzt Reservieren</a>
+          <a href="tel:+496032935777" class="btn btn--gold btn--full" data-i18n="contact.cta">Jetzt Reservieren</a>
         </div>
         <div class="contact__map reveal">
           <iframe
@@ -418,30 +419,30 @@
           </div>
         </div>
         <div class="footer__nav">
-          <h4 class="footer__nav-title">Navigation</h4>
+          <h4 class="footer__nav-title" data-i18n="footer.nav">Navigation</h4>
           <ul>
-            <li><a href="#about">Über Uns</a></li>
-            <li><a href="#menu">Speisekarte</a></li>
-            <li><a href="#gallery">Galerie</a></li>
-            <li><a href="#contact">Kontakt</a></li>
+            <li><a href="#about" data-i18n="nav.about">Über Uns</a></li>
+            <li><a href="#menu" data-i18n="nav.menu">Speisekarte</a></li>
+            <li><a href="#gallery" data-i18n="nav.gallery">Galerie</a></li>
+            <li><a href="#contact" data-i18n="nav.contact">Kontakt</a></li>
           </ul>
         </div>
         <div class="footer__contact-col">
-          <h4 class="footer__nav-title">Kontakt</h4>
+          <h4 class="footer__nav-title" data-i18n="footer.contact">Kontakt</h4>
           <p>In den Kolonnaden 17<br>61231 Bad Nauheim</p>
           <p><a href="tel:+496032935777">+49 (0) 6032 935 777</a></p>
           <p><a href="mailto:info@ristorante-da-davide.de">info@ristorante-da-davide.de</a></p>
         </div>
         <div class="footer__hours-col">
-          <h4 class="footer__nav-title">Öffnungszeiten</h4>
+          <h4 class="footer__nav-title" data-i18n="footer.hours">Öffnungszeiten</h4>
           <p>Di – So: 11:30 – 14:30 Uhr</p>
           <p>Di – So: 17:30 – 23:00 Uhr</p>
-          <p class="footer__closed">Mo: Ruhetag</p>
-          <p class="footer__hours-note">Feiertags montags geöffnet</p>
+          <p class="footer__closed" data-i18n="footer.closed">Mo: Ruhetag</p>
+          <p class="footer__hours-note" data-i18n="footer.note">Feiertags montags geöffnet</p>
         </div>
       </div>
       <div class="footer__bottom">
-        <p class="footer__copy">© 2025 Ristorante Da Davide. Alle Rechte vorbehalten.</p>
+        <p class="footer__copy" data-i18n="footer.copy">© 2025 Ristorante Da Davide. Alle Rechte vorbehalten.</p>
         <div class="footer__legal">
           <a href="impressum.html">Impressum</a>
           <a href="datenschutz.html">Datenschutz</a>
@@ -451,5 +452,6 @@
   </footer>
 
   <script src="js/main.js"></script>
+  <script src="js/i18n.js"></script>
 </body>
 </html>
