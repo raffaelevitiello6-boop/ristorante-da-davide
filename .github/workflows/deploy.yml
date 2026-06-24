@@ -8,24 +8,24 @@ on:
 
 jobs:
   deploy:
-    name: FTP Deploy to IONOS
+    name: SFTP Deploy to IONOS
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Deploy via FTP to IONOS
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      - name: Deploy via SFTP to IONOS
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
         with:
           server: ${{ secrets.FTP_HOST }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          # IONOS webspace root – adjust if your domain lives in a subfolder
-          server-dir: /
-          # Only upload these file types (exclude git/workflow files)
-          exclude: |
-            **/.git*
-            **/.git*/**
-            **/node_modules/**
-            .github/**
+          port: 22
+          local_path: './*'
+          remote_path: '/'
+          sftp_only: true
+          # Exclude git and workflow files
+          args: >-
+            --exclude=.git
+            --exclude=.github
