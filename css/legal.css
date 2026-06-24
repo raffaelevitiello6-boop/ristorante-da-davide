@@ -1,0 +1,127 @@
+/* Legal pages — supplements style.css */
+
+/* Keep nav always dark on legal pages */
+.nav.scrolled { background: rgba(26, 24, 20, 0.98); }
+
+/* Page header */
+.legal-hero {
+  background: var(--dark);
+  padding: 8rem 0 4rem;
+  text-align: left;
+}
+.legal-hero .section__label { display: block; margin-bottom: 0.75rem; }
+.legal-hero__title {
+  font-family: var(--font-serif);
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 300;
+  color: var(--white);
+  letter-spacing: 0.02em;
+}
+
+/* Content layout */
+.legal-content { background: var(--cream); }
+
+.legal-body {
+  max-width: 780px;
+}
+
+/* Sections */
+.legal-section {
+  margin-bottom: 3rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid var(--light);
+}
+.legal-section:last-of-type { border-bottom: none; }
+
+.legal-section h2 {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--dark);
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--gold);
+  display: inline-block;
+}
+
+.legal-section h3 {
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text);
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.legal-section p {
+  font-size: 0.925rem;
+  color: var(--text-light);
+  line-height: 1.85;
+  margin-bottom: 0.875rem;
+  font-weight: 300;
+}
+.legal-section p:last-child { margin-bottom: 0; }
+
+.legal-section a {
+  color: var(--gold-dark);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.legal-section a:hover { color: var(--dark); }
+
+.legal-section strong { color: var(--text); font-weight: 600; }
+
+.legal-section ul {
+  list-style: none;
+  margin: 0.75rem 0 0.875rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.legal-section ul li {
+  font-size: 0.925rem;
+  color: var(--text-light);
+  line-height: 1.7;
+  font-weight: 300;
+  padding-left: 1.25rem;
+  position: relative;
+}
+.legal-section ul li::before {
+  content: '–';
+  position: absolute;
+  left: 0;
+  color: var(--gold);
+}
+
+/* Back buttons */
+.legal-back {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+}
+
+.btn--outline-dark {
+  background: transparent;
+  color: var(--text);
+  border: 1.5px solid var(--light);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  padding: 0.875rem 2.25rem;
+  display: inline-flex;
+  align-items: center;
+  transition: var(--transition);
+}
+.btn--outline-dark:hover {
+  border-color: var(--dark);
+  color: var(--dark);
+}
+
+@media (max-width: 480px) {
+  .legal-back { flex-direction: column; }
+  .legal-back .btn { justify-content: center; }
+}
