@@ -203,18 +203,18 @@ ul { list-style: none; }
   width: 110px;
   height: auto;
   display: block;
-  filter: brightness(0) invert(1);
+  filter: drop-shadow(0 0 10px rgba(245,235,215,0.4)) drop-shadow(0 1px 4px rgba(0,0,0,0.45));
   transition: filter 0.3s;
 }
 .nav.scrolled .nav__logo-img {
-  filter: none;
+  filter: drop-shadow(0 0 8px rgba(245,235,215,0.35));
 }
 
 .hero__logo-img {
   display: block;
   width: clamp(260px, 42vw, 480px);
   height: auto;
-  filter: brightness(0) invert(1);
+  filter: drop-shadow(0 0 22px rgba(245,235,215,0.55)) drop-shadow(0 2px 8px rgba(0,0,0,0.5));
   margin: 0 auto;
   animation: fadeIn 0.8s 0.5s both;
 }
@@ -223,8 +223,6 @@ ul { list-style: none; }
   width: 130px;
   height: auto;
   display: block;
-  filter: brightness(0) invert(1);
-  opacity: 0.9;
   margin-bottom: 0.5rem;
 }
 
@@ -951,7 +949,7 @@ ul { list-style: none; }
 .contact__hours-closed { color: var(--text-light); }
 .contact__hours-closed span:last-child { color: var(--wine); font-weight: 500; }
 .contact__hours-note { font-size: 0.75rem; color: var(--text-light); margin-top: 0.6rem; font-style: italic; }
-.footer__hours-note { font-size: 0.72rem; color: rgba(255,255,255,0.35); font-style: italic; margin-top: 0.2rem; }
+.footer__hours-note { font-size: 0.72rem; color: rgba(59,54,48,0.45); font-style: italic; margin-top: 0.2rem; }
 
 .contact__details { display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 2rem; }
 
@@ -981,21 +979,21 @@ ul { list-style: none; }
 /* ============================================
    FOOTER
    ============================================ */
-.footer { background: var(--dark); padding: 4.5rem 0 2rem; }
+.footer { background: var(--cream-dark); padding: 4.5rem 0 2rem; }
 
 .footer__grid {
   display: grid;
   grid-template-columns: 2fr 1fr 1.5fr 1.5fr;
   gap: 3rem;
   padding-bottom: 3rem;
-  border-bottom: 1px solid rgba(255,255,255,0.07);
+  border-bottom: 1px solid rgba(59,54,48,0.12);
   margin-bottom: 2rem;
 }
 
 .footer__logo-script {
   font-family: var(--font-script);
   font-size: 1.4rem;
-  color: var(--gold);
+  color: var(--wine);
   line-height: 1;
   margin-bottom: 0.2rem;
 }
@@ -1003,13 +1001,13 @@ ul { list-style: none; }
   font-family: var(--font-serif);
   font-size: 1.8rem;
   font-weight: 500;
-  color: var(--white);
+  color: var(--text);
   letter-spacing: 0.05em;
   margin-bottom: 1rem;
 }
 .footer__tagline {
   font-size: 0.8rem;
-  color: rgba(255,255,255,0.3);
+  color: var(--text-light);
   line-height: 1.65;
   font-weight: 300;
 }
@@ -1019,13 +1017,13 @@ ul { list-style: none; }
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  color: rgba(255,255,255,0.45);
+  color: var(--text-light);
   font-size: 0.82rem;
   font-weight: 400;
   text-decoration: none;
   transition: color 0.2s;
 }
-.footer__social-link:hover { color: var(--gold); }
+.footer__social-link:hover { color: var(--wine); }
 .footer__social-link svg { flex-shrink: 0; }
 
 .footer__nav-title {
@@ -1033,28 +1031,28 @@ ul { list-style: none; }
   font-weight: 700;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: var(--gold);
+  color: var(--wine);
   margin-bottom: 1.25rem;
 }
 
 .footer__nav ul { display: flex; flex-direction: column; gap: 0.55rem; }
 .footer__nav a {
   font-size: 0.85rem;
-  color: rgba(255,255,255,0.45);
+  color: var(--text-light);
   font-weight: 300;
 }
-.footer__nav a:hover { color: var(--white); }
+.footer__nav a:hover { color: var(--text); }
 
 .footer__contact-col p,
 .footer__hours-col p {
   font-size: 0.85rem;
-  color: rgba(255,255,255,0.45);
+  color: var(--text-light);
   line-height: 1.75;
   font-weight: 300;
 }
-.footer__contact-col a { color: rgba(255,255,255,0.45); }
-.footer__contact-col a:hover { color: var(--gold); }
-.footer__closed { color: rgba(180, 60, 80, 0.7) !important; }
+.footer__contact-col a { color: var(--text-light); }
+.footer__contact-col a:hover { color: var(--wine); }
+.footer__closed { color: var(--wine) !important; }
 
 .footer__bottom {
   display: flex;
@@ -1065,16 +1063,16 @@ ul { list-style: none; }
 }
 .footer__copy {
   font-size: 0.73rem;
-  color: rgba(255,255,255,0.2);
+  color: rgba(59,54,48,0.4);
   font-weight: 300;
 }
 .footer__legal { display: flex; gap: 1.5rem; }
 .footer__legal a {
   font-size: 0.73rem;
-  color: rgba(255,255,255,0.2);
+  color: rgba(59,54,48,0.4);
   font-weight: 300;
 }
-.footer__legal a:hover { color: var(--gold); }
+.footer__legal a:hover { color: var(--wine); }
 
 /* ============================================
    RESPONSIVE
