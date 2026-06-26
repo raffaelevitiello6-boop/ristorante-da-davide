@@ -112,18 +112,34 @@
           <p class="about__text" data-i18n="about.text3">Genießen Sie Ihr Essen in unserem gemütlichen Innenraum oder auf unserer schönen Terrasse mit Blick auf den angrenzenden Tennisclub.</p>
           <div class="about__awards">
             <div class="about__award">
-              <span class="about__award-icon">🏅</span>
+              <span class="about__award-glyph">✦</span>
               <div>
                 <strong>IHK Ausbildungsbetrieb</strong>
                 <span data-i18n="about.ihk">Anerkannt von der IHK Gießen-Friedberg</span>
               </div>
+              <img src="img/zertifikat-ihk.jpg" alt="IHK Zertifikat" loading="lazy" class="about__award-cert">
             </div>
             <div class="about__award">
-              <span class="about__award-icon">🇮🇹</span>
+              <span class="about__award-glyph">✦</span>
               <div>
                 <strong>Botschafter Italienischer Küche</strong>
                 <span data-i18n="about.doc">DOC-zertifiziert – zum-echten-italiener.de</span>
               </div>
+              <img src="img/zertifikat-doc.jpg" alt="DOC Zertifikat" loading="lazy" class="about__award-cert">
+            </div>
+          </div>
+          <div class="about__stats">
+            <div class="about__stat">
+              <span class="about__stat-num">2001</span>
+              <span class="about__stat-label">Gegründet</span>
+            </div>
+            <div class="about__stat">
+              <span class="about__stat-num">4.4</span>
+              <span class="about__stat-label">Google Rating</span>
+            </div>
+            <div class="about__stat">
+              <span class="about__stat-num">772+</span>
+              <span class="about__stat-label">Bewertungen</span>
             </div>
           </div>
           <a href="#menu" class="btn btn--gold" data-i18n="about.cta">Speisekarte entdecken</a>
@@ -137,23 +153,19 @@
     <div class="container">
       <div class="features__grid">
         <div class="feature reveal">
-          <div class="feature__icon">
-            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="24" cy="24" r="16" stroke="currentColor" stroke-width="1.5"/><path d="M16 24c0-4.418 3.582-8 8-8s8 3.582 8 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M20 30c0-2.21 1.79-4 4-4s4 1.79 4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-          </div>
+          <span class="feature__label">Cucina</span>
           <h3 class="feature__title" data-i18n="feat1.title">Hausgemachte Pasta</h3>
           <p class="feature__text" data-i18n="feat1.text">Täglich frisch zubereitete Nudeln nach original italienischen Rezepten – eine Leidenschaft, die man schmeckt.</p>
         </div>
+        <span class="feature__sep" aria-hidden="true">✦</span>
         <div class="feature reveal">
-          <div class="feature__icon">
-            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 38V18l12-8 12 8v20l-12 4-12-4z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M24 10v32M12 18l12 8 12-8" stroke="currentColor" stroke-width="1.5"/></svg>
-          </div>
+          <span class="feature__label">Dal Grill</span>
           <h3 class="feature__title" data-i18n="feat2.title">Argentinisches Rindfleisch</h3>
           <p class="feature__text" data-i18n="feat2.text">Erstklassige Steaks vom Rind aus Argentinien – saftig, zart und auf den Punkt gegart.</p>
         </div>
+        <span class="feature__sep" aria-hidden="true">✦</span>
         <div class="feature reveal">
-          <div class="feature__icon">
-            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 40h32M14 40V28M34 40V28" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M8 28c0-8.837 7.163-16 16-16s16 7.163 16 16" stroke="currentColor" stroke-width="1.5"/><path d="M24 12V8M18 14l-2-3M30 14l2-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-          </div>
+          <span class="feature__label">Al Fresco</span>
           <h3 class="feature__title" data-i18n="feat3.title">Schöne Terrasse</h3>
           <p class="feature__text" data-i18n="feat3.text">Genießen Sie Ihr Essen im Freien auf unserer sonnigen Terrasse in den Kolonnaden – La Dolce Vita in Bad Nauheim.</p>
         </div>
@@ -166,7 +178,7 @@
     <div class="container">
       <div class="section__header reveal">
         <p class="section__label" data-i18n="menu.label">Unsere Küche</p>
-        <h2 class="section__title">La Nostra Cucina</h2>
+        <h2 class="section__title">La Nostra<br><em>Cucina</em></h2>
         <p class="section__subtitle" data-i18n="menu.subtitle">Frisch zubereitet, mit Liebe serviert – entdecken Sie unsere vielfältige Speisekarte.</p>
       </div>
       <div class="menu__tabs" role="tablist">
@@ -180,11 +192,11 @@
 
       <div class="menu__fish-note">
         <div class="menu__fish-note-item">
-          <span class="menu__fish-note-icon">🐟</span>
+          <span class="menu__fish-note-icon">◈</span>
           <p>Frische Fischgerichte werden täglich wechselnd angeboten – bitte fragen Sie unsere Bedienung.</p>
         </div>
         <div class="menu__fish-note-item">
-          <span class="menu__fish-note-icon">⭐</span>
+          <span class="menu__fish-note-icon">✦</span>
           <p>Unsere Tagesempfehlung erfahren Sie direkt von unserem Service-Team im Restaurant.</p>
         </div>
       </div>
@@ -205,35 +217,35 @@
           <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Vitello Tonnato</h4><p class="menu__item-desc">Kalbfleisch in Thunfischcreme</p></div><span class="menu__item-price">16,50 €</span></div>
           <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Mozzarella Caprese</h4><p class="menu__item-desc">Mit Tomaten und Basilikum</p></div><span class="menu__item-price">14,50 €</span></div>
           <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Filetto Carpaccio</h4><p class="menu__item-desc">Rohes Rinderfilet in dünne Scheiben geschnitten und garniert</p></div><span class="menu__item-price">16,50 €</span></div>
-          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Feldsalat mit Parmesan und Pinienkerne</h4><p class="menu__item-desc"></p></div><span class="menu__item-price">12,50 €</span></div>
+          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Feldsalat mit Parmesan und Pinienkerne</h4></div><span class="menu__item-price">12,50 €</span></div>
           <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Insalata di Pomodoro</h4><p class="menu__item-desc">Tomatensalat mit Zwiebeln und Basilikum</p></div><span class="menu__item-price">7,50 €</span></div>
           <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Insalata Mista</h4><p class="menu__item-desc">Gemischter Salat</p></div><span class="menu__item-price">7,50 €</span></div>
           <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Insalata Mista con Pollo</h4><p class="menu__item-desc">Mit Hähnchenbruststreifen</p></div><span class="menu__item-price">19,50 €</span></div>
           <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Insalata Italia</h4><p class="menu__item-desc">Italienischer Salat</p></div><span class="menu__item-price">13,50 €</span></div>
           <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Insalata Capricciosa</h4><p class="menu__item-desc">Gemischter Salat mit Schinken, Käsestreifen, Ei, Shrimps, Thunfisch und Krebsfleisch</p></div><span class="menu__item-price">19,50 €</span></div>
           <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Insalata Pacifico</h4><p class="menu__item-desc">Gemischter Salat mit Shrimps und Krebsfleisch</p></div><span class="menu__item-price">14,50 €</span></div>
-          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Rucolasalat mit Parmesan</h4><p class="menu__item-desc"></p></div><span class="menu__item-price">12,50 €</span></div>
+          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Rucolasalat mit Parmesan</h4></div><span class="menu__item-price">12,50 €</span></div>
         </div>
       </div>
 
       <!-- PIZZA -->
       <div class="menu__panel" data-panel="pizza">
         <div class="menu__grid">
-          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Pizza mit Tomaten und Käse</h4><p class="menu__item-desc"></p></div><span class="menu__item-price">7,50 €</span></div>
-          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Pizza mit Sardellen</h4><p class="menu__item-desc"></p></div><span class="menu__item-price">11,50 €</span></div>
-          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Pizza mit Salami</h4><p class="menu__item-desc"></p></div><span class="menu__item-price">11,50 €</span></div>
-          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Pizza mit Pilzen</h4><p class="menu__item-desc"></p></div><span class="menu__item-price">11,50 €</span></div>
+          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Pizza mit Tomaten und Käse</h4></div><span class="menu__item-price">7,50 €</span></div>
+          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Pizza mit Sardellen</h4></div><span class="menu__item-price">11,50 €</span></div>
+          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Pizza mit Salami</h4></div><span class="menu__item-price">11,50 €</span></div>
+          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Pizza mit Pilzen</h4></div><span class="menu__item-price">11,50 €</span></div>
           <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Pizza mit Peperoni</h4><p class="menu__item-desc">Peperoniwurst</p></div><span class="menu__item-price">11,50 €</span></div>
-          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Pizza mit Pilzen und Paprika</h4><p class="menu__item-desc"></p></div><span class="menu__item-price">12,50 €</span></div>
-          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Pizza mit Schinken</h4><p class="menu__item-desc"></p></div><span class="menu__item-price">11,50 €</span></div>
-          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Pizza mit Salami und Pilzen</h4><p class="menu__item-desc"></p></div><span class="menu__item-price">12,50 €</span></div>
-          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Pizza mit Schinken und Pilzen</h4><p class="menu__item-desc"></p></div><span class="menu__item-price">12,50 €</span></div>
+          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Pizza mit Pilzen und Paprika</h4></div><span class="menu__item-price">12,50 €</span></div>
+          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Pizza mit Schinken</h4></div><span class="menu__item-price">11,50 €</span></div>
+          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Pizza mit Salami und Pilzen</h4></div><span class="menu__item-price">12,50 €</span></div>
+          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Pizza mit Schinken und Pilzen</h4></div><span class="menu__item-price">12,50 €</span></div>
           <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Pizza Quattro Stagioni</h4><p class="menu__item-desc">Mit Salami, Schinken, Paprika und Pilzen</p></div><span class="menu__item-price">13,50 €</span></div>
           <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Pizza Gamberetti</h4><p class="menu__item-desc">Mit frischen Shrimps</p></div><span class="menu__item-price">13,50 €</span></div>
           <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Pizza Taormina</h4><p class="menu__item-desc">Mit Pilzen, Schinken, Salami und Artischocken</p></div><span class="menu__item-price">13,50 €</span></div>
-          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Pizza mit frischer Zucchini und Mozzarella</h4><p class="menu__item-desc"></p></div><span class="menu__item-price">13,50 €</span></div>
+          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Pizza mit frischer Zucchini und Mozzarella</h4></div><span class="menu__item-price">13,50 €</span></div>
           <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Pizza Rucola</h4><p class="menu__item-desc">Mit Parmesan und Parmaschinken</p></div><span class="menu__item-price">14,50 €</span></div>
-          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Pizza Broccoli und Gorgonzola</h4><p class="menu__item-desc"></p></div><span class="menu__item-price">13,50 €</span></div>
+          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Pizza Broccoli und Gorgonzola</h4></div><span class="menu__item-price">13,50 €</span></div>
           <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Pizza Pescatore</h4><p class="menu__item-desc">Mit Meeresfrüchten</p></div><span class="menu__item-price">14,50 €</span></div>
           <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Pizza Vegetariana</h4><p class="menu__item-desc">Mit gemischtem Gemüse</p></div><span class="menu__item-price">13,00 €</span></div>
           <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Pizza Italiana</h4><p class="menu__item-desc">Mit frischen Tomaten, Mozzarella und Basilikum</p></div><span class="menu__item-price">13,00 €</span></div>
@@ -284,13 +296,13 @@
         <div class="menu__grid">
           <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Gelato Vaniglia con Cioccolata</h4><p class="menu__item-desc">Vanilleeis mit Schokoladen- oder Himbeersauce</p></div><span class="menu__item-price">6,50 €</span></div>
           <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Zabaglione</h4><p class="menu__item-desc">Weinschaum</p></div><span class="menu__item-price">8,50 €</span></div>
-          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Creme Caramel</h4><p class="menu__item-desc"></p></div><span class="menu__item-price">7,50 €</span></div>
-          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Mousse au Chocolat</h4><p class="menu__item-desc"></p></div><span class="menu__item-price">7,50 €</span></div>
+          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Creme Caramel</h4></div><span class="menu__item-price">7,50 €</span></div>
+          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Mousse au Chocolat</h4></div><span class="menu__item-price">7,50 €</span></div>
           <div class="menu__item menu__item--special"><div class="menu__item-info"><h4 class="menu__item-name">Tiramisu</h4><p class="menu__item-desc">Italienische Torte</p></div><span class="menu__item-price">7,50 €</span></div>
-          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Tartufo</h4><p class="menu__item-desc"></p></div><span class="menu__item-price">7,50 €</span></div>
-          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Cassata</h4><p class="menu__item-desc"></p></div><span class="menu__item-price">7,50 €</span></div>
-          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Panna Cotta</h4><p class="menu__item-desc"></p></div><span class="menu__item-price">7,00 €</span></div>
-          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Zitronensorbet</h4><p class="menu__item-desc"></p></div><span class="menu__item-price">7,50 €</span></div>
+          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Tartufo</h4></div><span class="menu__item-price">7,50 €</span></div>
+          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Cassata</h4></div><span class="menu__item-price">7,50 €</span></div>
+          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Panna Cotta</h4></div><span class="menu__item-price">7,00 €</span></div>
+          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Zitronensorbet</h4></div><span class="menu__item-price">7,50 €</span></div>
         </div>
       </div>
     </div>
@@ -309,18 +321,16 @@
     <div class="container">
       <div class="section__header reveal">
         <p class="section__label" data-i18n="gallery.label">Eindrücke</p>
-        <h2 class="section__title">La Nostra Atmosfera</h2>
+        <h2 class="section__title">La Nostra<br><em>Atmosfera</em></h2>
       </div>
       <div class="gallery__grid">
-        <div class="gallery__item gallery__item--large reveal">
+        <div class="gallery__item gallery__item--large reveal" data-caption="Innenraum">
           <img src="img/gallery-innenraum.jpg" alt="Restaurantraum Da Davide" loading="lazy">
         </div>
-        <div class="gallery__item reveal"><img src="img/gallery-buffet.jpg" alt="Antipasti Buffet" loading="lazy"></div>
-        <div class="gallery__item reveal"><img src="img/gallery-terrasse.jpg" alt="Terrasse Da Davide" loading="lazy"></div>
-        <div class="gallery__item reveal"><img src="img/gallery-davide.jpg" alt="Inhaber Davide Capo" loading="lazy"></div>
-        <div class="gallery__item reveal"><img src="img/gallery-weinregal.jpg" alt="Weinauswahl" loading="lazy"></div>
-        <div class="gallery__item reveal"><img src="img/zertifikat-ihk.jpg" alt="IHK Ausbildungsbetrieb 2018" loading="lazy"></div>
-        <div class="gallery__item reveal"><img src="img/zertifikat-doc.jpg" alt="Botschafter Italienischer Küche – DOC Zertifikat" loading="lazy"></div>
+        <div class="gallery__item reveal" data-caption="Antipasti Buffet"><img src="img/gallery-buffet.jpg" alt="Antipasti Buffet" loading="lazy"></div>
+        <div class="gallery__item reveal" data-caption="Terrasse"><img src="img/gallery-terrasse.jpg" alt="Terrasse Da Davide" loading="lazy"></div>
+        <div class="gallery__item reveal" data-caption="Inhaber Davide Capo"><img src="img/gallery-davide.jpg" alt="Inhaber Davide Capo" loading="lazy"></div>
+        <div class="gallery__item reveal" data-caption="Weinauswahl"><img src="img/gallery-weinregal.jpg" alt="Weinauswahl" loading="lazy"></div>
       </div>
     </div>
   </section>
