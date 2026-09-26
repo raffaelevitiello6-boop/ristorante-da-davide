@@ -1278,6 +1278,16 @@ ul { list-style: none; }
   line-height: 1.1;
 }
 
+.reco-modal__label {
+  display: block;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.55);
+  margin-top: 0.5rem;
+}
+
 .reco-modal__divider {
   display: flex;
   align-items: center;
