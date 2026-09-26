@@ -37,14 +37,18 @@ document.querySelectorAll('.mobile-menu__link').forEach(link => {
 });
 
 // Menu tabs
+function activateMenuTab(name) {
+  const tab = document.querySelector(`.menu__tab[data-tab="${name}"]`);
+  const panel = document.querySelector(`[data-panel="${name}"]`);
+  if (!tab || !panel) return;
+  document.querySelectorAll('.menu__tab').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.menu__panel').forEach(p => p.classList.remove('active'));
+  tab.classList.add('active');
+  panel.classList.add('active');
+}
+
 document.querySelectorAll('.menu__tab').forEach(tab => {
-  tab.addEventListener('click', () => {
-    const target = tab.dataset.tab;
-    document.querySelectorAll('.menu__tab').forEach(t => t.classList.remove('active'));
-    document.querySelectorAll('.menu__panel').forEach(p => p.classList.remove('active'));
-    tab.classList.add('active');
-    document.querySelector(`[data-panel="${target}"]`).classList.add('active');
-  });
+  tab.addEventListener('click', () => activateMenuTab(tab.dataset.tab));
 });
 
 // Smooth scroll for anchor links
@@ -80,3 +84,48 @@ const observer = new IntersectionObserver(
 );
 
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+// Intro popup: La Raccomandazione
+const recoModal = document.getElementById('recoModal');
+if (recoModal) {
+  const STORAGE_KEY = 'recoModalSeen';
+
+  function openReco() {
+    recoModal.classList.add('open');
+    recoModal.setAttribute('aria-hidden', 'false');
+  }
+  function closeReco() {
+    recoModal.classList.remove('open');
+    recoModal.setAttribute('aria-hidden', 'true');
+    try { sessionStorage.setItem(STORAGE_KEY, '1'); } catch (e) {}
+  }
+
+  let alreadySeen = false;
+  try { alreadySeen = sessionStorage.getItem(STORAGE_KEY) === '1'; } catch (e) {}
+
+  if (!alreadySeen) {
+    window.addEventListener('load', () => setTimeout(openReco, 1200));
+  }
+
+  recoModal.querySelectorAll('[data-reco-close]').forEach(el => {
+    el.addEventListener('click', closeReco);
+  });
+
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && recoModal.classList.contains('open')) closeReco();
+  });
+
+  const recoCta = recoModal.querySelector('[data-reco-cta]');
+  if (recoCta) {
+    recoCta.addEventListener('click', e => {
+      e.preventDefault();
+      closeReco();
+      activateMenuTab('empfehlung');
+      const target = document.querySelector('#menu');
+      if (target) {
+        const offset = target.getBoundingClientRect().top + window.scrollY - nav.offsetHeight - 16;
+        window.scrollTo({ top: offset, behavior: 'smooth' });
+      }
+    });
+  }
+}

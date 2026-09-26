@@ -45,6 +45,22 @@
     </ul>
   </div>
 
+  <!-- INTRO POPUP: LA RACCOMANDAZIONE -->
+  <div class="reco-modal" id="recoModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="recoModalTitle">
+    <div class="reco-modal__backdrop" data-reco-close></div>
+    <div class="reco-modal__card">
+      <button class="reco-modal__close" data-reco-close aria-label="Schließen">✕</button>
+      <span class="reco-modal__script" id="recoModalTitle">La Raccomandazione</span>
+      <div class="reco-modal__divider">
+        <span class="reco-modal__divider-line"></span>
+        <span class="reco-modal__divider-icon">✦</span>
+        <span class="reco-modal__divider-line"></span>
+      </div>
+      <p class="reco-modal__text" data-i18n="reco.modalText">Davides persönliche Empfehlungen – wechselnd, saisonal, mit Leidenschaft ausgewählt.</p>
+      <a href="#menu" class="btn btn--primary reco-modal__cta" data-reco-cta data-i18n="reco.modalCta">Zur Empfehlung</a>
+    </div>
+  </div>
+
   <!-- HERO -->
   <section class="hero" id="home">
     <div class="hero__bg"></div>
@@ -182,7 +198,8 @@
         <p class="section__subtitle" data-i18n="menu.subtitle">Frisch zubereitet, mit Liebe serviert – entdecken Sie unsere vielfältige Speisekarte.</p>
       </div>
       <div class="menu__tabs" role="tablist">
-        <button class="menu__tab active" data-tab="suppen" data-i18n="tab.suppen">Suppen</button>
+        <button class="menu__tab menu__tab--reco active" data-tab="empfehlung" data-i18n="tab.empfehlung">Empfehlung</button>
+        <button class="menu__tab" data-tab="suppen" data-i18n="tab.suppen">Suppen</button>
         <button class="menu__tab" data-tab="vorspeisen" data-i18n="tab.vorspeisen">Vorspeisen & Salate</button>
         <button class="menu__tab" data-tab="pizza">Pizza</button>
         <button class="menu__tab" data-tab="pasta">Pasta</button>
@@ -201,8 +218,33 @@
         </div>
       </div>
 
+      <!-- EMPFEHLUNG / LA RACCOMANDAZIONE -->
+      <div class="menu__panel active" data-panel="empfehlung">
+        <div class="menu__reco-header">
+          <span class="menu__reco-script">La Raccomandazione</span>
+          <p class="menu__reco-note" data-i18n="reco.note">Unsere Empfehlung wechselt regelmäßig – die aktuelle Auswahl erfahren Sie gerne bei uns im Restaurant.</p>
+        </div>
+        <p class="menu__section-label" data-i18n="reco.chef">Empfehlung Da Davide</p>
+        <div class="menu__grid">
+          <div class="menu__item menu__item--special"><div class="menu__item-info"><h4 class="menu__item-name">Ravioli gefüllt mit Hummer</h4><p class="menu__item-desc">Dazu Shrimps</p></div></div>
+          <div class="menu__item menu__item--special"><div class="menu__item-info"><h4 class="menu__item-name">Hausgemachte Tortelloni</h4><p class="menu__item-desc">Mit Pfifferlingen</p></div></div>
+          <div class="menu__item menu__item--special"><div class="menu__item-info"><h4 class="menu__item-name">Kalbsrücken</h4><p class="menu__item-desc">Mit Pfifferlingen</p></div></div>
+          <div class="menu__item menu__item--special"><div class="menu__item-info"><h4 class="menu__item-name">Kalbsleber</h4><p class="menu__item-desc">Mit Butter & Salbei</p></div></div>
+          <div class="menu__item menu__item--special"><div class="menu__item-info"><h4 class="menu__item-name">Kalbskotelett</h4></div></div>
+          <div class="menu__item menu__item--special"><div class="menu__item-info"><h4 class="menu__item-name">Doradefilet</h4><p class="menu__item-desc">Mit Pfifferlingen</p></div></div>
+          <div class="menu__item menu__item--special"><div class="menu__item-info"><h4 class="menu__item-name">Calamaretti diavola</h4><p class="menu__item-desc">Babycalamari</p></div></div>
+        </div>
+        <p class="menu__section-label" data-i18n="reco.fish" style="margin-top:2.5rem">Frischer Fisch</p>
+        <div class="menu__grid">
+          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Seezunge</h4></div></div>
+          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Seeteufel</h4></div></div>
+          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Lachs</h4></div></div>
+          <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Schwertfisch</h4></div></div>
+        </div>
+      </div>
+
       <!-- SUPPEN -->
-      <div class="menu__panel active" data-panel="suppen">
+      <div class="menu__panel" data-panel="suppen">
         <div class="menu__grid">
           <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Minestrone</h4><p class="menu__item-desc">Gemüsesuppe</p></div><span class="menu__item-price">8,50 €</span></div>
           <div class="menu__item"><div class="menu__item-info"><h4 class="menu__item-name">Tortellini in Brodo</h4><p class="menu__item-desc">Fleischbrühe mit gefüllten Nudeln</p></div><span class="menu__item-price">7,50 €</span></div>
