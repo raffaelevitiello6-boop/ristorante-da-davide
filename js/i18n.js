@@ -158,6 +158,13 @@ function applyLang(lang) {
     if (t[key] !== undefined) el.innerHTML = t[key];
   });
 
+  // Inline EN translations (menu items, descriptions) via data-en attribute.
+  // German stays in the HTML as default and is cached into data-de on first run.
+  document.querySelectorAll('[data-en]').forEach(el => {
+    if (el.dataset.de === undefined) el.dataset.de = el.textContent;
+    el.textContent = lang === 'en' ? el.dataset.en : el.dataset.de;
+  });
+
   const btn = document.getElementById('langToggle');
   if (btn) btn.textContent = lang === 'de' ? 'EN' : 'DE';
 
