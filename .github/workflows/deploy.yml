@@ -16,16 +16,16 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Deploy via SFTP to IONOS
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
         with:
           server: ${{ secrets.FTP_HOST }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          protocol: sftp
           port: 22
-          server-dir: /public/
-          exclude: |
-            **/.git*
-            **/.git*/**
-            **/.github/**
-            **/README.md
+          local_path: './*'
+          remote_path: '/public/'
+          sftp_only: true
+          # Exclude git and workflow files
+          args: >-
+            --exclude=.git
+            --exclude=.github
