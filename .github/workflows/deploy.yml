@@ -15,6 +15,12 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Remote-Verzeichnis /public sicherstellen
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq lftp
+          lftp -u "${{ secrets.FTP_USERNAME }}","${{ secrets.FTP_PASSWORD }}" sftp://${{ secrets.FTP_HOST }}:22 \
+            -e "set sftp:auto-confirm yes; mkdir -f public; bye"
+
       - name: Deploy via SFTP to IONOS
         uses: wlixcc/SFTP-Deploy-Action@v1.2.4
         with:
