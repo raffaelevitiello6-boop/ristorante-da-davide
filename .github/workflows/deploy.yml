@@ -15,23 +15,17 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Remote-Verzeichnis /public sicherstellen
-        run: |
-          sudo apt-get update -qq && sudo apt-get install -y -qq lftp
-          lftp -u "${{ secrets.FTP_USERNAME }}","${{ secrets.FTP_PASSWORD }}" sftp://${{ secrets.FTP_HOST }}:22 \
-            -e "set sftp:auto-confirm yes; mkdir -f public; bye"
-
       - name: Deploy via SFTP to IONOS
-        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{ secrets.FTP_HOST }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
+          protocol: sftp
           port: 22
-          local_path: './*'
-          remote_path: '/public/'
-          sftp_only: true
-          # Exclude git and workflow files
-          args: >-
-            --exclude=.git
-            --exclude=.github
+          server-dir: /public/
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/.github/**
+            **/README.md
